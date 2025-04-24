@@ -14,6 +14,13 @@ namespace OOP_OnTap1
 
         public Nguoi() { }
 
+        public Nguoi (string diaChi, string ten, int tuoi)
+        {
+            DiaChi = diaChi;
+            Ten = ten;
+            Tuoi = tuoi;
+        }
+
         public virtual void HienThiThongTin()
         {
             Console.WriteLine($"Ten: {Ten}, Tuoi: {Tuoi}, Đia chi: {DiaChi}");

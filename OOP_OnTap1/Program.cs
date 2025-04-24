@@ -8,6 +8,25 @@ namespace OOP_OnTap1
 {
     internal class Program
     {
+        public enum ThucDon
+        {
+            NhapThongTinMotNhanVien = 1,
+            NhapDanhSachTuFile,
+            Xuat,
+            TimNhanVienCoLuongMax,
+            TimNhanVienCoLuongMin,
+            TimNhanVienCoMucLuongNhoHon,
+            TImNhanVienCoMucLuongLonHon,
+            TimTatCaQuanLyThuocPhong,
+            XoaQuanLyCuaPhongNaoDo,
+            SapDanhSachViTriTang,
+            SapDanhSachViTriGiam,
+
+
+
+            Thoat
+        }
+
         static void Main(string[] args)
         {
             QuanLyNhanVien ds = new QuanLyNhanVien();

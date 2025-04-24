@@ -157,6 +157,47 @@ namespace OOP_OnTap1
             }
             sr.Close();
         }
+
+        public NhanVien TimNhanVienTheoMa(string ma)
+        {
+            NhanVien nv = null;
+            foreach(var item in collection)
+            {
+                if(((NhanVien)item).MaNhanVien == ma)
+                {
+                    return (NhanVien)item;
+                }
+            }
+            //neu bang null thi hien thi ra man hinh ma khong co trong danh sach
+            return nv;
+        }
+
+        public QuanLyNhanVien TimNhanVienTheoTen(string ten)
+        {
+            QuanLyNhanVien ql = new QuanLyNhanVien();
+            foreach(var item in collection)
+            {
+                if(((NhanVien)item).Ten == ten)
+                {
+                    ql.ThemNguoi(item); 
+                }
+            }
+
+            //co kha nang co nhieu nguoi cung ten, neu khong co tra ve rong. kiem tra trong ham main neu rong thi in ra ko co ten
+            return ql;
+        }
+
+        public void Them(Nguoi a)
+        {
+            collection.Add(a);
+        }
+
+     
+        public void Xoa(Nguoi a)
+        {
+            collection.Remove(a);
+        }
+
         public QuanLyNhanVien TimNhanVienCoLuongMax()
         {
             QuanLyNhanVien result = new QuanLyNhanVien();
