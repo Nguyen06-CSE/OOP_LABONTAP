@@ -1,0 +1,20 @@
+nguoi,Ha Noi,Nguyen Van A,30
+nguoi,Da Nang,Le Thi B,25
+nguoi,TP HCM,Tran Van C,40
+nhan vien,Ha Noi,Pham Thi D,28,15000000,NV001,Ke Toan
+nhan vien,Da Nang,Nguyen Van E,32,18000000,NV002,IT Support
+nhan vien,TP HCM,Hoang Thi F,27,16000000,NV003,Nhan Su
+quan ly,Ha Noi,Le Van G,38,25000000,NV004,Giam Doc,Tai Chinh
+quan ly,Da Nang,Tran Thi H,45,27000000,NV005,Truong Phong,Marketing
+quan ly,TP HCM,Pham Van I,50,30000000,NV006,Giam Doc,San Xuat
+nhan vien,Can Tho,Nguyen Thi J,29,17000000,NV007,Kinh Doanh
+nguoi,Hai Phong,Hoang Van K,22
+nhan vien,Ha Noi,Le Thi L,35,19000000,NV008,Ban Hang
+quan ly,Da Nang,Nguyen Van M,41,28000000,NV009,Giam Doc,Phat Trien
+nguoi,TP HCM,Pham Thi N,31
+nhan vien,Da Nang,Tran Van O,26,15500000,NV010,Cham Soc Khach Hang
+quan ly,Ha Noi,Le Thi P,36,26500000,NV011,Truong Nhom,Van Hanh
+nguoi,Can Tho,Nguyen Van Q,23
+nhan vien,Hai Phong,Pham Thi R,30,17500000,NV012,Ky Thuat
+quan ly,TP HCM,Hoang Van S,48,29500000,NV013,Giam Sat,He Thong
+quan ly,Da Nang,Nguyen Thi T,39,26000000,NV014,Truong Bo Phan,Nghien Cuu

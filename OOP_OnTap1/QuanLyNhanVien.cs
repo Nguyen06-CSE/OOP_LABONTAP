@@ -24,6 +24,8 @@ namespace OOP_OnTap1
             collection.Add(nguoi);
         }
 
+       
+
         public Nguoi NhapThongTin()
         {
             Console.WriteLine("Chọn loại đối tượng (1 - Người, 2 - Nhân viên, 3 - Quản lý): ");
@@ -203,20 +205,7 @@ namespace OOP_OnTap1
             return result;
         }
 
-        public QuanLyNhanVien TimTatCaQuanLyThuocPhong(string phong)
-        {
-            QuanLyNhanVien result = new QuanLyNhanVien();
-
-            foreach (var item in collection)
-            {
-                if(item is QuanLy ql &&  string.Compare(ql.Phong, phong) == 0)
-                {
-                    result.ThemNguoi(item);
-                }
-            }
-
-            return result;
-        }
+      
 
         public QuanLyNhanVien TimNhanVienCoMucLuongLonHon(decimal luong)
         {
@@ -242,6 +231,84 @@ namespace OOP_OnTap1
                 }
             }
             return result;
+        }
+
+        public List<Nguoi> XoaNguoi(Nguoi item, List<Nguoi> ds)
+        {
+            if (ds.Contains(item))
+            {
+                ds.Remove(item);
+            }
+            return ds;
+        }
+
+        public QuanLyNhanVien TimTatCaQuanLyThuocPhong(string phong)
+        {
+            QuanLyNhanVien result = new QuanLyNhanVien();
+
+            foreach (var item in collection)
+            {
+                if (item is QuanLy ql && string.Compare(ql.Phong, phong) == 0)
+                {
+                    result.ThemNguoi(item);
+                }
+            }
+
+            return result;
+        }
+
+        public List<Nguoi> XoaQuanLyCuaPhongNaoDo(string phong)
+        {
+            var result = collection;
+            var quanLyThuocPhon = TimTatCaQuanLyThuocPhong(phong).collection;
+            foreach (var item in quanLyThuocPhon)
+            {
+                if (result.Contains(item))
+                {
+                    result.Remove(item);
+                }
+            }
+            return result;
+        }
+
+
+
+        public void Swap(int i, int j, List<Nguoi> list)
+        {
+            var tmp = list[i];
+            list[i] = list[j];
+            list[j] = tmp;
+        }
+
+        public void SapDanhSachViTriTang()
+        {
+            for (int i = 0; i < collection.Count - 1; i++)
+            {
+                for(int j = i+1; j < collection.Count; j++)
+                {
+                    if (collection[i] is NhanVien nv1 && collection[j] is NhanVien nv2 
+                        && string.Compare(nv1.ViTri, nv2.ViTri) > 0)
+                    {
+                        Swap(i, j, collection);
+                    }
+                        
+                }
+            }
+        }
+
+        public void SapDanhSachViTriGiam()
+        {
+            for (int i = 0; i < collection.Count - 1; i++)
+            {
+                for (int j = i + 1; j < collection.Count; j++)
+                {
+                    if (collection[i] is NhanVien nv1 && collection[j] is NhanVien nv2
+                        && string.Compare(nv1.ViTri, nv2.ViTri) < 0)
+                    {
+                        Swap(i, j, collection);
+                    }
+                }
+            }
         }
     }
 }
