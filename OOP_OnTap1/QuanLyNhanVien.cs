@@ -198,29 +198,77 @@ namespace OOP_OnTap1
             collection.Remove(a);
         }
 
+        //public QuanLyNhanVien TimNhanVienCoLuongMax()
+        //{
+        //    QuanLyNhanVien result = new QuanLyNhanVien();
+
+        //    decimal maxVal = 0;
+
+        //    foreach(var item in collection)
+        //    {
+        //        if(item is NhanVien nv && nv.Luong > maxVal)
+        //        {
+        //            maxVal = nv.Luong;
+        //        }
+        //    }
+
+        //    foreach(var item in collection)
+        //    {
+        //        if (item is NhanVien nv && nv.Luong == maxVal)
+        //        {
+        //            result.ThemNguoi(item);
+        //        }
+        //    }
+        //    return result;
+        //}
+
         public QuanLyNhanVien TimNhanVienCoLuongMax()
         {
             QuanLyNhanVien result = new QuanLyNhanVien();
 
             decimal maxVal = 0;
 
-            foreach(var item in collection)
+            foreach (var item in collection)
             {
-                if(item is NhanVien nv && nv.Luong > maxVal)
+                if (((NhanVien)item).Luong > maxVal)
                 {
-                    maxVal = nv.Luong;
+                    maxVal = ((NhanVien)item).Luong;
                 }
             }
 
-            foreach(var item in collection)
+            foreach (var item in collection)
             {
-                if (item is NhanVien nv && nv.Luong == maxVal)
+                if (((NhanVien)item).Luong == maxVal)
                 {
                     result.ThemNguoi(item);
                 }
             }
             return result;
         }
+
+        //public QuanLyNhanVien TimNhanVienCoLuongMin()
+        //{
+        //    QuanLyNhanVien result = new QuanLyNhanVien();
+
+        //    decimal minVal = decimal.MaxValue;
+
+        //    foreach (var item in collection)
+        //    {
+        //        if (item is NhanVien nv && nv.Luong < minVal)
+        //        {
+        //            minVal = nv.Luong;
+        //        }
+        //    }
+
+        //    foreach (var item in collection)
+        //    {
+        //        if (item is NhanVien nv && nv.Luong == minVal)
+        //        {
+        //            result.ThemNguoi(item);
+        //        }
+        //    }
+        //    return result;
+        //}
 
         public QuanLyNhanVien TimNhanVienCoLuongMin()
         {
@@ -230,15 +278,15 @@ namespace OOP_OnTap1
 
             foreach (var item in collection)
             {
-                if (item is NhanVien nv && nv.Luong < minVal)
+                if (((NhanVien)item).Luong < minVal)
                 {
-                    minVal = nv.Luong;
+                    minVal = ((NhanVien)item).Luong;
                 }
             }
 
             foreach (var item in collection)
             {
-                if (item is NhanVien nv && nv.Luong == minVal)
+                if (((NhanVien)item).Luong == minVal)
                 {
                     result.ThemNguoi(item);
                 }
@@ -246,14 +294,27 @@ namespace OOP_OnTap1
             return result;
         }
 
-      
+
+
+        //public QuanLyNhanVien TimNhanVienCoMucLuongLonHon(decimal luong)
+        //{
+        //    QuanLyNhanVien result = new QuanLyNhanVien();
+        //    foreach (var item in collection)
+        //    {
+        //        if (item is NhanVien nv && nv.Luong > luong)
+        //        {
+        //            result.ThemNguoi(item);
+        //        }
+        //    }
+        //    return result;
+        //}
 
         public QuanLyNhanVien TimNhanVienCoMucLuongLonHon(decimal luong)
         {
             QuanLyNhanVien result = new QuanLyNhanVien();
             foreach (var item in collection)
             {
-                if (item is NhanVien nv && nv.Luong > luong)
+                if (((NhanVien)item).Luong > luong)
                 {
                     result.ThemNguoi(item);
                 }
@@ -261,12 +322,25 @@ namespace OOP_OnTap1
             return result;
         }
 
+        //public QuanLyNhanVien TimNhanVienCoMucLuongNhoHon(decimal luong)
+        //{
+        //    QuanLyNhanVien result = new QuanLyNhanVien();
+        //    foreach (var item in collection)
+        //    {
+        //        if (item is NhanVien nv && nv.Luong < luong)
+        //        {
+        //            result.ThemNguoi(item);
+        //        }
+        //    }
+        //    return result;
+        //}
+
         public QuanLyNhanVien TimNhanVienCoMucLuongNhoHon(decimal luong)
         {
             QuanLyNhanVien result = new QuanLyNhanVien();
             foreach (var item in collection)
             {
-                if (item is NhanVien nv && nv.Luong < luong)
+                if ( ((NhanVien)item).Luong < luong)
                 {
                     result.ThemNguoi(item);
                 }
@@ -283,13 +357,23 @@ namespace OOP_OnTap1
             return ds;
         }
 
+        public QuanLyNhanVien LayDanhSachNhanVien()
+        {
+            QuanLyNhanVien result = new QuanLyNhanVien();
+            foreach(var item in collection)
+            {
+                result.Them((NhanVien)item);
+            }
+            return result;
+        }
+
         public QuanLyNhanVien TimTatCaQuanLyThuocPhong(string phong)
         {
             QuanLyNhanVien result = new QuanLyNhanVien();
 
             foreach (var item in collection)
             {
-                if (item is QuanLy ql && string.Compare(ql.Phong, phong) == 0)
+                if (string.Compare(((QuanLy)item).Phong, phong) == 0)
                 {
                     result.ThemNguoi(item);
                 }
@@ -297,6 +381,21 @@ namespace OOP_OnTap1
 
             return result;
         }
+
+        //public QuanLyNhanVien TimTatCaQuanLyThuocPhong(string phong)
+        //{
+        //    QuanLyNhanVien result = new QuanLyNhanVien();
+
+        //    foreach (var item in collection)
+        //    {
+        //        if (item is QuanLy ql && string.Compare(ql.Phong, phong) == 0)
+        //        {
+        //            result.ThemNguoi(item);
+        //        }
+        //    }
+
+        //    return result;
+        //}
 
         public List<Nguoi> XoaQuanLyCuaPhongNaoDo(string phong)
         {
