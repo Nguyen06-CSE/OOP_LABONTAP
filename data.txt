@@ -1,20 +1,20 @@
-TapChi,2023,NXB Kim Dong,Tap chi Van Hoc,12,3
-TapChi,2021,NXB Tre,Tong hop Khoa Hoc,5,1
-Sach,2020,NXB Lao Dong,Phap Luat Can Ban,978-604-6-24680-1,Hoang Van E
-TapChi,2020,NXB Giao Duc,Tap chi Tin Hoc,9,2
-TapChi,2019,NXB Van Hoa,Tap chi Am Nhac,3,1
-Sach,2018,NXB Giao Duc,Giai Tich 12,978-604-1-54321-0,Le Thi B
-Sach,2023,NXB Van Hoa,Ky Nang Song,978-604-9-87654-3,Tran Van C
-TapChi,2024,NXB Khoa Hoc,Tong hop Khoa Hoc Moi,7,4
-TapChi,2018,NXB Thanh Nien,Tap chi Lich Su,6,2
-TapChi,2017,NXB Nhi Dong,Tap chi Thieu Nhi,2,1
-TapChi,2020,NXB The Thao,Tap chi Bong Da,8,2
-TapChi,2025,NXB Cong An,Tap chi Phap Luat,4,2
-Sach,2021,NXB Kim Dong,Truyen Co Tich,978-604-2-12345-6,Nam Cao
-Sach,2019,NXB Tre,Lap trinh C++,978-604-3-65432-1,Nguyen Van A
-Sach,2024,NXB Khoa Hoc,Tri Tue Nhan Tao,978-604-7-13579-2,Dinh Thi D
-Sach,2022,NXB Nhi Dong,Be hoc chu cai,978-604-5-11223-4,Pham Thi F
-Sach,2017,NXB The Thao,Ky Thuat Bong Da,978-604-8-33445-6,Nguyen Van G
-TapChi,2022,NXB Lao Dong,Tap chi Cong Nghe,10,3
-Sach,2016,NXB Cong An,Tam ly toi pham,978-604-4-99887-6,Luu Thi H
-Sach,2025,NXB Quoc Phong,Lich Su Chien Tranh,978-604-2-22334-8,Pham Van I
+nguoi,Ha Noi,Nguyen Van A,30
+nguoi,Da Nang,Le Thi B,25
+nguoi,TP HCM,Tran Van C,40
+nhan vien,Ha Noi,Pham Thi D,28,15000000,NV001,Ke Toan
+nhan vien,Da Nang,Nguyen Van E,32,18000000,NV002,IT Support
+nhan vien,TP HCM,Hoang Thi F,27,16000000,NV003,Nhan Su
+quan ly,Ha Noi,Le Van G,38,25000000,NV004,Giam Doc,Tai Chinh
+quan ly,Da Nang,Tran Thi H,45,27000000,NV005,Truong Phong,Marketing
+quan ly,TP HCM,Pham Van I,50,30000000,NV006,Giam Doc,San Xuat
+nhan vien,Can Tho,Nguyen Thi J,29,17000000,NV007,Kinh Doanh
+nguoi,Hai Phong,Hoang Van K,22
+nhan vien,Ha Noi,Le Thi L,35,19000000,NV008,Ban Hang
+quan ly,Da Nang,Nguyen Van M,41,28000000,NV009,Giam Doc,Phat Trien
+nguoi,TP HCM,Pham Thi N,31
+nhan vien,Da Nang,Tran Van O,26,15500000,NV010,Cham Soc Khach Hang
+quan ly,Ha Noi,Le Thi P,36,26500000,NV011,Truong Nhom,Van Hanh
+nguoi,Can Tho,Nguyen Van Q,23
+nhan vien,Hai Phong,Pham Thi R,30,17500000,NV012,Ky Thuat
+quan ly,TP HCM,Hoang Van S,48,29500000,NV013,Giam Sat,He Thong
+quan ly,Da Nang,Nguyen Thi T,39,26000000,NV014,Truong Bo Phan,Nghien Cuu
