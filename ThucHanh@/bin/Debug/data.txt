@@ -1,0 +1,20 @@
+TapChi,2023,NXB Kim Dong,Tap chi Van Hoc,12,3
+TapChi,2021,NXB Tre,Tong hop Khoa Hoc,5,1
+Sach,2020,NXB Lao Dong,Phap Luat Can Ban,978-604-6-24680-1,Hoang Van E
+TapChi,2020,NXB Giao Duc,Tap chi Tin Hoc,9,2
+TapChi,2019,NXB Van Hoa,Tap chi Am Nhac,3,1
+Sach,2018,NXB Giao Duc,Giai Tich 12,978-604-1-54321-0,Le Thi B
+Sach,2023,NXB Van Hoa,Ky Nang Song,978-604-9-87654-3,Tran Van C
+TapChi,2024,NXB Khoa Hoc,Tong hop Khoa Hoc Moi,7,4
+TapChi,2018,NXB Thanh Nien,Tap chi Lich Su,6,2
+TapChi,2017,NXB Nhi Dong,Tap chi Thieu Nhi,2,1
+TapChi,2020,NXB The Thao,Tap chi Bong Da,8,2
+TapChi,2025,NXB Cong An,Tap chi Phap Luat,4,2
+Sach,2021,NXB Kim Dong,Truyen Co Tich,978-604-2-12345-6,Nam Cao
+Sach,2019,NXB Tre,Lap trinh C++,978-604-3-65432-1,Nguyen Van A
+Sach,2024,NXB Khoa Hoc,Tri Tue Nhan Tao,978-604-7-13579-2,Dinh Thi D
+Sach,2022,NXB Nhi Dong,Be hoc chu cai,978-604-5-11223-4,Pham Thi F
+Sach,2017,NXB The Thao,Ky Thuat Bong Da,978-604-8-33445-6,Nguyen Van G
+TapChi,2022,NXB Lao Dong,Tap chi Cong Nghe,10,3
+Sach,2016,NXB Cong An,Tam ly toi pham,978-604-4-99887-6,Luu Thi H
+Sach,2025,NXB Quoc Phong,Lich Su Chien Tranh,978-604-2-22334-8,Pham Van I

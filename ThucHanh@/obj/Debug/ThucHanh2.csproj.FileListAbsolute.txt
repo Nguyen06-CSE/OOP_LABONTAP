@@ -1,0 +1,7 @@
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\bin\Debug\ThucHanh@.exe.config
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\bin\Debug\ThucHanh@.exe
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\bin\Debug\ThucHanh@.pdb
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\obj\Debug\ThucHanh2.csproj.AssemblyReference.cache
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\obj\Debug\ThucHanh2.csproj.CoreCompileInputs.cache
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\obj\Debug\ThucHanh@.exe
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\OOP_OnTap1\ThucHanh@\obj\Debug\ThucHanh@.pdb
