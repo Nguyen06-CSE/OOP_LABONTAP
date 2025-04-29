@@ -252,10 +252,11 @@ namespace ThucHanh_
         public DanhSachAnPham TapChiCoNamNhoNhat()
         {
             DanhSachAnPham result = new DanhSachAnPham();
-            int min = FindMin(TimCacAnPhamLaTapChi().collection);
-            foreach (var item in collection)
+            var tapChiList = TimCacAnPhamLaTapChi().collection;
+            int min = FindMin(tapChiList);
+            foreach (var item in tapChiList)
             {
-                if ( item is TapChi && item.Nam == min)
+                if (item.Nam == min)
                 {
                     result.ThemAnPham(item);
                 }
@@ -266,10 +267,11 @@ namespace ThucHanh_
         public DanhSachAnPham TapChiCoNamLonNhat()
         {
             DanhSachAnPham result = new DanhSachAnPham();
-            int max = FindMax(TimCacAnPhamLaTapChi().collection);
-            foreach (var item in collection)
+            var tapChiList = TimCacAnPhamLaTapChi().collection;
+            int max = FindMax(tapChiList);
+            foreach (var item in tapChiList)
             {
-                if (item is TapChi && item.Nam == max)
+                if (item.Nam == max)
                 {
                     result.ThemAnPham(item);
                 }
@@ -295,10 +297,11 @@ namespace ThucHanh_
         public DanhSachAnPham SachCoNamNhoNhat()
         {
             DanhSachAnPham result = new DanhSachAnPham();
-            int min = FindMin(TimCacAnPhamLaSach().collection);
-            foreach (var item in collection)
+            var sachList = TimCacAnPhamLaSach().collection;
+            int min = FindMin(sachList);
+            foreach (var item in sachList)
             {
-                if (item is TapChi && item.Nam == min)
+                if (item.Nam == min)
                 {
                     result.ThemAnPham(item);
                 }
@@ -323,6 +326,28 @@ namespace ThucHanh_
             return result;
         }
 
+        public void XoaCacAnPhamCoNam(int nam)
+        {
+            foreach(var item in collection)
+            {
+                if(item.Nam == nam)
+                {
+                    collection.Remove(item);
+                }
+            }
+        }
 
+        public void XoaCacAnPhamChungNhaXuatBan(string nhaXuatBan)
+        {
+            foreach (var item in collection)
+            {
+                if (string.Compare(item.NhaXuatBan, nhaXuatBan) == 0)
+                {
+                    collection.Remove(item);
+                }
+            }
+        }
+
+       
     }
 }
