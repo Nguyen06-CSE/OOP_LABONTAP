@@ -450,5 +450,68 @@ namespace OOP_OnTap1
                 }
             }
         }
+
+        public string ChuanHoaTen(string ten)
+        {
+            if (string.IsNullOrWhiteSpace(ten))
+                return ten;
+
+            string result = "";
+            bool vietHoa = true; 
+
+            foreach (char c in ten)
+            {
+                if (c == ' ')
+                {
+                    if (result.Length > 0 && result[result.Length - 1] != ' ')
+                    {
+                        result += ' ';
+                    }
+                    vietHoa = true;
+                }
+                else
+                {
+                    if (vietHoa)
+                    {
+                        result += char.ToUpper(c);
+                        vietHoa = false;
+                    }
+                    else
+                    {
+                        result += char.ToLower(c);
+                    }
+                }
+            }
+            if (result.Length > 0 && result[result.Length - 1] == ' ')
+            {
+                result = result.Substring(0, result.Length - 1);
+            }
+
+            return result;
+        }
+
+        public void ChuanHoaDanhSachTen()
+        {
+            foreach (var item in collection)
+            {
+                item.Ten = ChuanHoaTen(item.Ten);
+            }
+        }
+
+        public void SapXepTheoTen()
+        {
+            ChuanHoaDanhSachTen();
+            for(int i = 0; i < collection.Count - 1; i++)
+            {
+                for(int j = i + 1; j < collection.Count; j++)
+                {
+                    if (string.Compare(collection[i].Ten, collection[j].Ten) < 0)
+                    {
+                        Swap(i, j, collection);
+                    }
+                   
+                }
+            }
+        }
     }
 }
